@@ -1,5 +1,4 @@
 import React from 'react';
-
 import TopBar from './components/topbar/Topbar';
 import './App.css';
 import NavBar from './components/navbar/NavBar';

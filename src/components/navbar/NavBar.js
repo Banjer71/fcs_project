@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import logo from '../../logo-fcs.jpg';
+import ToggleMenu from './togglemenu/ToggleMenu'
 
 const Nav = styled.div`
 	max-width: 1200px;
@@ -57,6 +58,8 @@ const NavBar = () => {
 					<a>Contacts</a>
 				</li>
 			</Navigation>
+			<ToggleMenu />
+
 		</Nav>
 	);
 };

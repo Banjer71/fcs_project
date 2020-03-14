@@ -63,7 +63,7 @@ overflow: ${(props) => (props.isOpen ? 'visible' : 'hidden')};
 }
 
 @media screen and (min-width: 780px) {
-    overflow: ${(props) => (props.isOpen ? 'visible' : 'visible')};
+    overflow: visible;
     display: flex;
 
     > li a {

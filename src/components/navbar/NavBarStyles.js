@@ -1,5 +1,4 @@
-import styled, {css} from 'styled-components';
-
+import styled, { css } from 'styled-components';
 
 export const BtnContent = styled.div`
 	border: 1px solid green;
@@ -46,17 +45,13 @@ export const Logo = styled.div`
 `;
 
 export const Navigation = styled.ul`
-	/* height: 0; */
-	/* overflow: ${(props) => (props.isOpen ? 'visible' : 'hidden')}; */
     opacity: ${(props) => (props.isOpen ? 1 : 0)};
     transition: all 0.5s ease;
     
 	> li a {
 		background-color: rgb(234, 234, 234);
 		display: block;
-		padding-bottom: 20px;
-		/* transition: ${props => props.isOpen && css `all 0.5s ease'`}; */
-        
+		padding-bottom: 20px;        
 		cursor: pointer;
 	}
 

@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../logo-fcs.jpg';
 import { Nav, Logo, LogoAndBtn, BtnContent, Navigation } from './NavBarStyles';
-
-
-
 
 const NavBar = () => {
 	const [ isOpen, setIsOpen ] = useState(false);
@@ -12,34 +10,39 @@ const NavBar = () => {
 		setIsOpen(!isOpen);
 	};
 
+	const handleClickItem = () => {
+		setIsOpen(false);
+	}
+
 	return (
 		<Nav>
 			<LogoAndBtn>
-				<Logo>
-					<img src={logo} />
-				</Logo>
+				<Link to="/" onClick={handleClickItem}>
+					<Logo>
+						<img src={logo} />
+					</Logo>
+				</Link>
 				<BtnContent onClick={toggleClickHandler}>
 					<div className="bar" />
 					<div className="bar" />
 					<div className="bar" />
 				</BtnContent>
 			</LogoAndBtn>
-			
+
 			<Navigation isOpen={isOpen}>
 				<li>
-					<a>Gallery</a>
+					<Link to="/gallery" onClick={handleClickItem}>Gallery</Link>
 				</li>
 				<li>
-					<a>Elaborations</a>
+					<Link to="/elaborations" onClick={handleClickItem}>Elaborations</Link>
 				</li>
 				<li>
-					<a>Collaborations</a>
+					<Link to="/collaborations" onClick={handleClickItem}>Collaborations</Link>
 				</li>
 				<li>
-					<a>Contacts</a>
+					<Link to="contacts" onClick={handleClickItem}>Contacts</Link>
 				</li>
 			</Navigation>
-			
 		</Nav>
 	);
 };

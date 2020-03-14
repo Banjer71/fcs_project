@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import logo from '../../logo-fcs.jpg';
-import { Nav, Logo, LogoAndBtn, BtnContet, Navigation } from './NavBarStyles';
+import { Nav, Logo, LogoAndBtn, BtnContent, Navigation } from './NavBarStyles';
+
+
 
 
 const NavBar = () => {
@@ -16,13 +18,13 @@ const NavBar = () => {
 				<Logo>
 					<img src={logo} />
 				</Logo>
-				<BtnContet onClick={toggleClickHandler}>
+				<BtnContent onClick={toggleClickHandler}>
 					<div className="bar" />
 					<div className="bar" />
 					<div className="bar" />
-				</BtnContet>
+				</BtnContent>
 			</LogoAndBtn>
-
+			
 			<Navigation isOpen={isOpen}>
 				<li>
 					<a>Gallery</a>
@@ -37,6 +39,7 @@ const NavBar = () => {
 					<a>Contacts</a>
 				</li>
 			</Navigation>
+			
 		</Nav>
 	);
 };

@@ -45,13 +45,13 @@ export const Logo = styled.div`
 `;
 
 export const Navigation = styled.ul`
-    opacity: ${(props) => (props.isOpen ? 1 : 0)};
-    transition: all 0.5s ease;
-    
+	opacity: ${(props) => (props.isOpen ? 1 : 0)};
+	transition: all 0.5s ease;
+
 	> li a {
 		background-color: rgb(234, 234, 234);
 		display: block;
-		padding-bottom: 20px;        
+		padding-bottom: 20px;
 		cursor: pointer;
 	}
 
@@ -59,7 +59,17 @@ export const Navigation = styled.ul`
 		background-color: #efece1;
 	}
 
+	.dropdown {
+		padding-left: 20px;
+		background-color: rgb(234, 234, 234);
+	}
+
+	.fa {
+		display: none;
+	}
+
 	@media screen and (min-width: 780px) {
+
 		opacity: 1;
 		display: flex;
 
@@ -72,5 +82,21 @@ export const Navigation = styled.ul`
 		> li a:hover {
 			background-color: #efece1;
 		}
+
+		.fa {
+			display: inline-block;
+			margin-left: 5px;
+		}
+
+		.dropdown{
+			display: none;
+			position: absolute;
+		}
+
+		.content:hover .dropdown {
+			display: block;
+		}
+
+		
 	}
 `;

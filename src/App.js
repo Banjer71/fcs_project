@@ -5,7 +5,6 @@ import './App.css';
 import NavBar from './components/navbar/NavBar';
 import Home from './components/pages/Home';
 import Elaborations from './components/pages/Elaborations';
-import Gallery from './components/pages/Gallery';
 import Collaborations from './components/pages/Collaborations';
 import Contacts from './components/pages/Contacts';
 import PrivateGallery from './components/pages/PrivateGallery'; 

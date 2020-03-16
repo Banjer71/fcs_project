@@ -12,7 +12,7 @@ const NavBar = () => {
 
 	const handleClickItem = () => {
 		setIsOpen(false);
-	}
+	};
 
 	return (
 		<Nav>
@@ -31,16 +31,35 @@ const NavBar = () => {
 
 			<Navigation isOpen={isOpen}>
 				<li>
-					<Link to="/gallery" onClick={handleClickItem}>Gallery</Link>
+					<div className='content'>
+					<a className="gallery">
+						Gallery
+						<i class="fa fa-caret-down" />
+					</a>
+					<ul className="dropdown">
+						<li>
+							<Link to="/fabrics">Fabrics</Link>
+						</li>
+						<li>
+							<Link to="/privategallery">Private Gallery</Link>
+						</li>
+					</ul>
+					</div>
 				</li>
 				<li>
-					<Link to="/elaborations" onClick={handleClickItem}>Elaborations</Link>
+					<Link to="/elaborations" onClick={handleClickItem}>
+						Elaborations
+					</Link>
 				</li>
 				<li>
-					<Link to="/collaborations" onClick={handleClickItem}>Collaborations</Link>
+					<Link to="/collaborations" onClick={handleClickItem}>
+						Collaborations
+					</Link>
 				</li>
 				<li>
-					<Link to="contacts" onClick={handleClickItem}>Contacts</Link>
+					<Link to="contacts" onClick={handleClickItem}>
+						Contacts
+					</Link>
 				</li>
 			</Navigation>
 		</Nav>

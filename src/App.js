@@ -9,6 +9,7 @@ import Collaborations from './components/pages/Collaborations';
 import Contacts from './components/pages/Contacts';
 import PrivateGallery from './components/pages/PrivateGallery';
 import Fabrics from './components/pages/Fabrics';
+import Footer from './components/pages/Footer';
 
 function App() {
 	return (
@@ -26,6 +27,7 @@ function App() {
 					<Route exact path="/collaborations" component={Collaborations} />
 					<Route exact path="/contacts" component={Contacts} />
 				</Switch>
+				<Footer />
 			</Router>
 		</div>
 	);

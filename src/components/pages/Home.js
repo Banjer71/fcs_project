@@ -26,6 +26,7 @@ const MainArticle = styled.article`
     border: 0;
     height: 1px;
     margin: 1rem auto;
+	}
 `;
 
 const CardSection = styled.div`
@@ -68,29 +69,29 @@ const Card = styled.div`
 `;
 
 const PreFooter = styled.div`
-    margin: 0.8rem 0;
-    background-color: #f6f6f7;
-    text-align: center;
+	margin: 0.8rem 0;
+	background-color: #f6f6f7;
+	text-align: center;
 
-    h1 {
-        margin: 0.5rem 0;
-        padding: 1rem;
-    }
+	h1 {
+		margin: 0.5rem 0;
+		padding: 1rem;
+	}
 
-    hr {
-    max-width: 400px;
-    background-color: #eaeaeb;
-    border: 0;
-    height: 1px;
-    margin: 1rem auto;
+	hr {
+		max-width: 400px;
+		background-color: #eaeaeb;
+		border: 0;
+		height: 1px;
+		margin: 1rem auto;
 
-    }
-    .prefooter-text p {
-        margin: 2rem 0;
+	}
+	.prefooter-text p {
+		margin: 2rem 0;
 		font-size: 0.9rem;
 		color: #313539;
 		line-height: 25px;
-        padding: 0 1.4rem;
+		padding: 0 1.4rem;
 	}
 `;
 

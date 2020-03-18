@@ -8,6 +8,7 @@ const ColCard = styled.div`
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: left;
+	
 
 	.col-card-info {
 		padding-top: 25px;
@@ -20,6 +21,22 @@ const ColCard = styled.div`
 
 	.col-card-img img {
 		width: 320px;
+		height: 460px;
+		box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75);
+	}
+
+	@media screen and (min-width: 680px) {
+		grid-column: ${(props) => (props.fromCollab ? 'span 4' : '1')};
+	}
+
+	@media screen and (min-width: 1024px) {
+		grid-column: ${(props) => (props.fromCollab ? 'span 1' : '1')};
+
+		.col-card-img img {
+			width: 300px;
+			height: 420px;
+			
+	}
 	}
 `;
 

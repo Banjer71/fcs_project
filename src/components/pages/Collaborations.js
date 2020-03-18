@@ -4,6 +4,7 @@ import { Container } from './PagesStyles';
 import Catch22 from '../../catch22.jpg';
 import AllTM from '../../allthemoney.jpg';
 import Zoolander2 from '../../zoolander_2.jpg';
+import Confratello from '../../casadel_confratello.jpg';
 import Card from './Card';
 
 const Content = styled.div`
@@ -25,7 +26,12 @@ const SubContainer = styled(Container)`
 const Collaboration = styled.div`
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);
+	grid-gap: 10px;
 	gap: 10px;
+
+	@media screen and (min-width: 1024px) {
+		grid-template-columns: repeat(3, 1fr);
+	}
 `;
 
 const Collaborations = () => {
@@ -50,6 +56,12 @@ const Collaborations = () => {
 					/>
 					<Card
 						image={Zoolander2}
+						name="Emanuela Naccarati"
+						company="Fabric Consultant Costume P.A."
+						fromCollab={true}
+					/>
+					<Card
+						image={Confratello}
 						name="Emanuela Naccarati"
 						company="Fabric Consultant Costume P.A."
 						fromCollab={true}

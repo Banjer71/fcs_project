@@ -69,7 +69,6 @@ export const Navigation = styled.ul`
 	}
 
 	@media screen and (min-width: 780px) {
-
 		opacity: 1;
 		display: flex;
 
@@ -88,7 +87,7 @@ export const Navigation = styled.ul`
 			margin-left: 5px;
 		}
 
-		.dropdown{
+		.dropdown {
 			display: none;
 			position: absolute;
 		}
@@ -96,7 +95,5 @@ export const Navigation = styled.ul`
 		.content:hover .dropdown {
 			display: block;
 		}
-
-		
 	}
 `;

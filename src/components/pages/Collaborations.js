@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Container } from './PagesStyles';
-import Catch22 from '../../catch22.jpg';
-import AllTM from '../../allthemoney.jpg';
-import Zoolander2 from '../../zoolander_2.jpg';
-import Confratello from '../../casadel_confratello.jpg';
+import Catch22 from '../images/catch22.jpg';
+import AllTM from '../images/allthemoney.jpg';
+import Zoolander2 from '../images/zoolander_2.jpg';
+import Confratello from '../images/casadel_confratello.jpg';
 import Card from './Card';
 
 const Content = styled.div`

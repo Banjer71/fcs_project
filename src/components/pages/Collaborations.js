@@ -2,6 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { Container } from './PagesStyles';
 import Catch22 from '../../catch22.jpg';
+import AllTM from '../../allthemoney.jpg';
+import Zoolander2 from '../../zoolander_2.jpg';
+import Confratello from '../../casadel_confratello.jpg';
+import Card from './Card';
 
 const Content = styled.div`
 	width: 100%;
@@ -22,24 +26,11 @@ const SubContainer = styled(Container)`
 const Collaboration = styled.div`
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);
+	grid-gap: 10px;
 	gap: 10px;
 
-	.col-card {
-		margin: 0 auto;
-		grid-column: 1/9;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: left;
-	}
-
-	.col-card-info {
-		padding-top: 25px;
-		padding-left: 10px;
-		> h3,
-		p {
-			margin-bottom: 10px;
-		}
+	@media screen and (min-width: 1024px) {
+		grid-template-columns: repeat(3, 1fr);
 	}
 `;
 
@@ -51,15 +42,30 @@ const Collaborations = () => {
 			</SubContainer>
 			<Container>
 				<Collaboration>
-					<div className="col-card">
-						<div className="col-card-img">
-							<img src={Catch22} alt="poster movie" />
-						</div>
-						<div className="col-card-info">
-							<h3>Emanuela Naccarati</h3>
-							<p>Fabric Consultant Costume P.A.</p>
-						</div>
-					</div>
+					<Card
+						image={Catch22}
+						name="Emanuela Naccarati"
+						company="Fabric Consultant Costume P.A."
+						fromCollab={true}
+					/>
+					<Card
+						image={AllTM}
+						name="Emanuela Naccarati"
+						company="Fabric Consultant Costume P.A."
+						fromCollab={true}
+					/>
+					<Card
+						image={Zoolander2}
+						name="Emanuela Naccarati"
+						company="Fabric Consultant Costume P.A."
+						fromCollab={true}
+					/>
+					<Card
+						image={Confratello}
+						name="Emanuela Naccarati"
+						company="Fabric Consultant Costume P.A."
+						fromCollab={true}
+					/>
 				</Collaboration>
 			</Container>
 		</Content>

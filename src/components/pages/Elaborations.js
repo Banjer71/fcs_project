@@ -11,7 +11,7 @@ const Elaborations = () => {
 	return (
 		<Content>
 			<Container>
-				<h1>Elaborations</h1>
+				
 			</Container>
 			<Container />
 		</Content>

@@ -9,7 +9,6 @@ import Card from './Card';
 
 const Content = styled.div`
 	width: 100%;
-	outline: 1px dashed red;
 `;
 
 const SubContainer = styled(Container)`
@@ -17,7 +16,6 @@ const SubContainer = styled(Container)`
     margin: 1rem 0;
     padding: 1rem 0;
     background-color: #f6f6f7;
-
     > h2 {
         text-align: center;
     }

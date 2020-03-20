@@ -15,34 +15,15 @@ const properties = {
 	}
 };
 
-const Slideshow = ({ image1, image2, image3, image4, image5, image6, image7, image8 }) => {
+const Slideshow = ({ image }) => {
 	return (
 		<div className="slide-container">
 			<Slide {...properties}>
-				<div className="each-slide">
-					<div style={{ backgroundImage: `url(${image1})` }} />
-				</div>
-				<div className="each-slide">
-					<div style={{ backgroundImage: `url(${image2})` }} />
-				</div>
-				<div className="each-slide">
-					<div style={{ backgroundImage: `url(${image3})` }} />
-				</div>
-        <div className="each-slide">
-					<div style={{ backgroundImage: `url(${image4})` }} />
-				</div>
-        <div className="each-slide">
-					<div style={{ backgroundImage: `url(${image5})` }} />
-				</div>
-        <div className="each-slide">
-					<div style={{ backgroundImage: `url(${image6})` }} />
-				</div>
-        <div className="each-slide">
-					<div style={{ backgroundImage: `url(${image7})` }} />
-				</div>
-        <div className="each-slide">
-					<div style={{ backgroundImage: `url(${image8})` }} />
-				</div>
+				{image.map((item) => (
+					<div className="each-slide">
+						<div style={{ backgroundImage: `url(${item})` }} />
+					</div>
+				))}
 			</Slide>
 		</div>
 	);

@@ -13,11 +13,10 @@ const slideImages = [
     Three
 ];
 
-
 const Home = () => {
 	return (
         <>
-		<Slideshow image1={slideImages[0]} image2={slideImages[1]} image3={slideImages[2]}/>
+		<Slideshow image={slideImages}/>
 		<Container>
 			<MainArticle>
 				<h1>FSC_Fabric Consulting Services</h1>

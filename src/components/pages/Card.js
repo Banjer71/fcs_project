@@ -34,9 +34,10 @@ const ColCard = styled.div`
 	}
 
 	.flip-card-back {
-		background-color: #517fa4;
+		background-image: linear-gradient(to right bottom, #2998ff, #666);
 		transform: rotateY(180deg);
 		color: #eaeaea;
+		box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75);
 
 		> h3 {
 			padding: 3px;
@@ -71,12 +72,23 @@ const ColCard = styled.div`
 		box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75);
 	}
 
+	.card-text {
+		text-align: center;
+	}
+
 	@media screen and (min-width: 680px) {
 		grid-column: ${(props) => (props.fromCollab ? 'span 4' : '1')};
+
+		.col-card-img img {
+			width: 300px;
+			height: 430px;
+		}
 	}
 
 	@media screen and (min-width: 1024px) {
 		grid-column: ${(props) => (props.fromCollab ? 'span 1' : '1')};
+		width: 300px;
+		height: 420px;
 
 		.col-card-img img {
 			width: 300px;
@@ -97,9 +109,9 @@ const Card = (props) => {
 					</div>
 				</div>
 				<div className="flip-card-back ">
-					<h3>{props.textTitle}</h3>
-					<h3>{props.textDesign}</h3>
-					<h3>{props.textName}</h3>
+					<h3 className='card-text'>{props.textTitle}</h3>
+					<h3 className='card-text'>{props.textDesign}</h3>
+					<h3 className='card-text'>{props.textName}</h3>
 					<h4>{props.objective}</h4>
 					<p>{props.text}</p>
 					<p>{props.text2}</p>

@@ -1,11 +1,22 @@
 import React from 'react';
 import Mailicon from '../../socialicons/contact_icon-1.png'
 import {Container, MainArticle, CardSection, Card, PreFooter} from './PagesStyles'
+import One from '../images/02/fcs6-700x300.jpg'
+import Two from '../images/02/fcs5-700x300.jpg';
+import Three from '../images/02/bbb-700x300.jpg';
 
+import Slideshow from '../SlideShow';
+
+const slideImages = [
+    One,
+    Two,
+    Three
+];
 
 const Home = () => {
 	return (
         <>
+		<Slideshow image={slideImages}/>
 		<Container>
 			<MainArticle>
 				<h1>FSC_Fabric Consulting Services</h1>

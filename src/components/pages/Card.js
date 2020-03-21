@@ -8,6 +8,7 @@ const ColCard = styled.div`
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: left;
+	
 
 	.col-card-info {
 		padding-top: 25px;
@@ -34,7 +35,8 @@ const ColCard = styled.div`
 		.col-card-img img {
 			width: 300px;
 			height: 420px;
-		}
+			
+	}
 	}
 `;
 

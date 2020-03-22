@@ -12,10 +12,8 @@ const ColCard = styled.div`
 	align-items: left;
 	perspective: 120rem;
 	
-
 	&:hover .flip-card  {
 		transform: rotateY(180deg);
-
 	}
 
 	.flip-card {
@@ -38,7 +36,6 @@ const ColCard = styled.div`
 		transform: rotateY(180deg);
 		color: #eaeaea;
 		box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75);
-
 		> h3 {
 			padding: 3px;
 		}
@@ -78,7 +75,6 @@ const ColCard = styled.div`
 
 	@media screen and (min-width: 680px) {
 		grid-column: ${(props) => (props.fromCollab ? 'span 4' : '1')};
-
 		.col-card-img img {
 			width: 300px;
 			height: 430px;
@@ -89,7 +85,6 @@ const ColCard = styled.div`
 		grid-column: ${(props) => (props.fromCollab ? 'span 1' : '1')};
 		width: 300px;
 		height: 420px;
-
 		.col-card-img img {
 			width: 300px;
 			height: 420px;
@@ -117,7 +112,6 @@ const Card = (props) => {
 					<p>{props.text2}</p>
 				</div>
 			</div>
-
 		</ColCard>
 	);
 };

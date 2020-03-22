@@ -69,28 +69,14 @@ const SlideCard = styled.div`
 	}
 `;
 
-// const Caption = styled(SlideCard)`
-// 	position: absolute;
-// 	width:100%;
-// 	height: 48px;
-//     bottom: 36px;
-// 	left: 0;
-// 	background: #000;
-//     text-align:center;
-//     font-weight:bold;
-// 	opacity:0.6;
-// 	color: #fff;
-// `;
 
 const Fabrics = () => {
 	return (
 		<Content>
 			<Container>
-				
 				<SlideCard>
                 <h3>Cotton/Linen</h3>
 					<Slideshow image={cottonLinen} />
-					{/* <Caption className="caption">100% Cotton</Caption> */}
 				</SlideCard>
 				<SlideCard>
 					<h3>Organdis</h3>

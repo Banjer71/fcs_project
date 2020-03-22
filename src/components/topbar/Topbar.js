@@ -35,6 +35,7 @@ const InnerTopbar = styled.div`
 
 const TopBar = () => {
 	return (
+		
 		<TopBarSection>
 			<InnerTopbar>
 				<SocialMedia

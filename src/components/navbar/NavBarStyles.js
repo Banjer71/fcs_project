@@ -45,23 +45,32 @@ export const Logo = styled.div`
 `;
 
 export const Navigation = styled.ul`
-	opacity: ${(props) => (props.isOpen ? 1 : 0)};
+	opacity: ${(props) => (props.isOpen ? '1' : '0')};
+	display: ${(props) => (props.isOpen ? 'block' : 'none')};
+	/* transition: ${(props) => (props.isOpen ? 'all 0.5s ease' : 'none')}; */
 	transition: all 0.5s ease;
-
+	
+	> li {
+		width: 90%;
+		margin: 0 auto; 
+	}
+	
 	> li a {
 		background-color: rgb(234, 234, 234);
 		display: block;
-		padding-bottom: 20px;
+		padding: 10px;
 		cursor: pointer;
+		margin-bottom: 2px;
 	}
 
 	> li a:hover {
 		background-color: #efece1;
 	}
 
-	.dropdown {
+	.dropdown li{
 		padding-left: 20px;
 		background-color: rgb(234, 234, 234);
+		z-index: 50;
 	}
 
 	.fa {
@@ -71,10 +80,10 @@ export const Navigation = styled.ul`
 	@media screen and (min-width: 780px) {
 		opacity: 1;
 		display: flex;
-
+		
 		> li a {
 			background-color: transparent;
-			padding: 15px;
+			padding: 20px;
 			transition: all 0.5s ease;
 		}
 
@@ -84,12 +93,13 @@ export const Navigation = styled.ul`
 
 		.fa {
 			display: inline-block;
-			margin-left: 5px;
+			margin-left: 3px;
 		}
 
 		.dropdown {
 			display: none;
 			position: absolute;
+			z-index: 10;
 		}
 
 		.content:hover .dropdown {

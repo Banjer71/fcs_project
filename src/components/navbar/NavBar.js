@@ -6,7 +6,7 @@ import { Nav, Logo, LogoAndBtn, BtnContent, Navigation } from './NavBarStyles';
 
 const NavBar = (props) => {
 	const [isOpen, setIsOpen] = useState(false);
-	const [stickyClass, setStickyClass] = useState('');
+	// const [stickyClass, setStickyClass] = useState('');
 
 	const toggleClickHandler = () => {
 		setIsOpen(!isOpen);
@@ -25,16 +25,16 @@ const NavBar = (props) => {
 	window.addEventListener('scroll', () => {
 		let menuArea = document.querySelector('.menu-area');
 		if (window.pageYOffset > 150) {
-			// menuArea.classList.add('slide-menu');
-			setStickyClass('slide-menu')
+			menuArea.classList.add('slide-menu');
+			// setStickyClass('slide-menu')
 		} else {
-			// menuArea.classList.remove('slide-menu');
-			setStickyClass('')
+			menuArea.classList.remove('slide-menu');
+			// setStickyClass('')
 		}
 	})
 
 	return (
-		<NavArea className={'menu-area ' + stickyClass}>
+		<NavArea className='menu-area'>
 			<Nav>
 				<LogoAndBtn>
 					<Link to="/" onClick={handleClickItem}>

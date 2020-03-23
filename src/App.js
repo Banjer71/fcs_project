@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import TopBar from './components/topbar/Topbar';
 import './App.css';
@@ -12,6 +12,7 @@ import Fabrics from './components/pages/Fabrics';
 import Footer from './components/pages/Footer';
 
 function App() {
+
 	return (
 		<div className="App">
 			<Router>

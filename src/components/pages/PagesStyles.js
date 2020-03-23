@@ -84,6 +84,10 @@ export const PreFooter = styled.div`
 		margin: 1rem auto;
 	}
 
+	.prefooter-text h3 {
+		text-align: center;
+	}
+
 	.prefooter-text p {
 		margin: 2rem 0;
 		font-size: 0.9rem;

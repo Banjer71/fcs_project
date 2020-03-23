@@ -45,24 +45,46 @@ const Collaborations = () => {
 						name="Emanuela Naccarati"
 						company="Fabric Consultant Costume P.A."
 						fromCollab={true}
+						textTitle='All The Money'
+						textDesign='Costume Design'
+						textName='Janity Jates'
+						objective='FCS Obiettivo:'
+						text='Ricerca Fornitori'
+						text2='Ricerca, Campionatura e lavorazione per: tessuti, maglieria, jeans, pelle e accessori'
 					/>
 					<Card
 						image={AllTM}
 						name="Emanuela Naccarati"
 						company="Fabric Consultant Costume P.A."
 						fromCollab={true}
+						textTitle='All The Money'
+						textDesign='Costume Design'
+						textName='Janity Jates'
+						objective='FCS Obiettivo:'
+						text='Ricerca Fornitori'
+						text2='Ricerca, Campionatura e lavorazione per: tessuti, maglieria, jeans, pelle e accessori'
+						 
 					/>
 					<Card
 						image={Zoolander2}
 						name="Emanuela Naccarati"
 						company="Fabric Consultant Costume P.A."
 						fromCollab={true}
+						textTitle='Zoolander'
+						textDesign=''
+						textName='Leesa Evans'
+						objective='FCS Obiettivo:'
+						text='Ricerca Fornitori'
+						text2='Ricerca, Campionatura e lavorazione per: tessuti, maglieria, jeans, pelle e accessori'
 					/>
 					<Card
 						image={Confratello}
 						name="Emanuela Naccarati"
 						company="Fabric Consultant Costume P.A."
 						fromCollab={true}
+						textTitle='Casa del Confratello'
+						text='Casa del confratello: Art Director Emanuela Naccarati Fornitori'
+						text2={`Ricerca fornitori, tessuti e materiali degli abiti e degli accessori dell'azienda`}
 					/>
 				</Collaboration>
 			</Container>

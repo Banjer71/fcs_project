@@ -31,6 +31,34 @@
 	background-color: #313539;
 }
 
+@media screen and (min-width: 780px) {
+	.menu-area {
+		width: 100%;
+		z-index: 100;
+		transition: background-color .5s;
+	}
+	
+	.slide-menu {
+		background-color: #fff;
+		position: fixed;
+		height: 80px;
+		top: 0;
+		box-shadow: rgba(0, 0, 0, 0.25) 0 6px 6px -6px;
+		
+	}
+	
+	.menu-area.slide-menu div {
+		padding: 2px;
+	}
+	.menu-area.slide-menu img {
+		width: 70px;
+	}
+	
+	.menu-area.slide-menu ul li a {
+		font-size: 14px;
+	}
+}
+
 
 
 

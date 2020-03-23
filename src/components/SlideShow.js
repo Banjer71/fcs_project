@@ -15,12 +15,12 @@ const properties = {
 	}
 };
 
-const Slideshow = ({ image }) => {
+const Slideshow = ({ image,className }) => {
 	return (
 		<div className="slide-container">
 			<Slide {...properties}>
 				{image.map((item) => (
-					<div className="each-slide">
+					<div className={`each-slide ${className}`} >
 						<div style={{ backgroundImage: `url(${item})` }} />
 					</div>
 				))}

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container } from './PagesStyles';
+import { Container, SlideCard } from './PagesStyles';
 import Slideshow from '../SlideShow';
 
 const Content = styled.div`
@@ -60,14 +60,6 @@ const leather = [
 	'assets/leather/rosa.jpg',
 	'assets/leather/yellow.jpg'
 ];
-
-const SlideCard = styled.div`
-	position: relative;
-	> h3 {
-		margin: 15px 0;
-		text-align: left;
-	}
-`;
 
 
 const Fabrics = () => {

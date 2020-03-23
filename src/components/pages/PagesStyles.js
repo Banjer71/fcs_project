@@ -100,3 +100,11 @@ export const PreFooter = styled.div`
 		padding-bottom: 1.5rem;
 	}
 `;
+
+export const SlideCard = styled.div`
+	position: relative;
+	> h3 {
+		margin: 15px 0;
+		text-align: left;
+	}
+`;

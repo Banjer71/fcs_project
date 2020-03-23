@@ -93,7 +93,8 @@ export const Navigation = styled.ul`
 
 		.fa {
 			display: inline-block;
-			margin-left: 3px;
+			margin-left: 5px;
+			position: absolute;
 		}
 
 		.dropdown {

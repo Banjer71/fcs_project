@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+export const Content = styled.div`width: 100%;`;
+
 export const Container = styled.div`
 	padding: 0 .5rem;
 	max-width: 1200px;
@@ -106,5 +108,15 @@ export const SlideCard = styled.div`
 	> h3 {
 		margin: 15px 0;
 		text-align: left;
+	}
+`;
+
+export const SubContainer = styled(Container)`
+	max-width: 100%;
+	margin: 1rem 0;
+	padding: 1rem 0;
+	background-color: #f6f6f7;
+	> h2 {
+		text-align: center;
 	}
 `;

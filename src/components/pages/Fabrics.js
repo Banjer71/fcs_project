@@ -1,11 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container, SlideCard } from './PagesStyles';
+import { Content, Container, SlideCard } from './PagesStyles';
 import Slideshow from '../SlideShow';
 
-const Content = styled.div`
-	width: 100%;
-`;
+
 
 const cottonLinen = [
 	'/assets/lino/lino.jpg',

@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import styled from 'styled-components';
 import { Content, Container } from './PagesStyles';
 
 const FormContent = styled.div`
+	.email-response {
+		color: green;
+		font-size: 18px;
+		margin: 20px;
+	}
+
 	@media screen and (min-width: 780px) {
 		display: flex;
 		margin-left: 5rem;
@@ -53,14 +59,23 @@ const Info = styled.div`
 `;
 
 const ContactUs = () => {
+	const [ isSent, setIsSent ] = useState('');
+
+	const removeResponse = () => {
+		setIsSent('');
+	};
+
 	const sendEmail = (e) => {
 		e.preventDefault();
-		emailjs.sendForm('default_service', 'contatc_form', e.target, 'user_9M071Z9YysFIbLj7JLEaI').then(
+		emailjs.sendForm('default_service', 'contact_form', e.target, 'user_iESDZWRha1lEH2BnEdu5t').then(
 			(result) => {
 				console.log(result.text);
+				setIsSent('Thank you, your message has been sent successfully');
+				setTimeout(removeResponse, 4000);
 			},
 			(error) => {
 				console.log(error.text);
+				setIsSent('Something went wrong');
 			}
 		);
 		e.target.reset();
@@ -79,6 +94,7 @@ const ContactUs = () => {
 						<label>Message</label>
 						<textarea name="message" />
 						<input type="submit" value="Send" className="submit-button" />
+						<p className="email-response">{isSent}</p>
 					</Form>
 					<Info>
 						<div className="address">

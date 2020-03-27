@@ -2,7 +2,7 @@ import React from 'react';
 
 const PrivateGallery = () => {
     return ( 
-        <h1>This is the Private Gallery page</h1>
+        <h2>No Private Gallery Yet</h2>
      );
 }
  

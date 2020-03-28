@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
 import Mailicon from "../../socialicons/contact_icon-1.png";
 import {
@@ -24,9 +25,11 @@ const Home = () => {
           <h1>FSC_Fabric Consulting Services</h1>
           <hr />
           <p>
-            <strong>FCS</strong> Offers a specialized service in: Fabric
-            research, dyeing and textile printing for Film, Television, Theatre
-            and Fashion Industry.
+            <FormattedMessage
+              id="home_h1_text"
+              defaultMessage="text"
+              values={{ FCS: "FCS", html: word => <strong>{word}</strong> }}
+            />
           </p>
         </MainArticle>
         <MainArticle>
@@ -36,8 +39,10 @@ const Home = () => {
                 <i class="fa fa-repeat fa-2x" aria-hidden="true" />
               </div>
               <p>
-                Offering a wide range of the latest swatches chosen from many
-                Italian and European companies.
+                <FormattedMessage
+                  id="card_section_text-1"
+                  defaultMessage="text"
+                />
               </p>
             </Card>
             <Card>
@@ -45,10 +50,10 @@ const Home = () => {
                 <i class="fa fa-scissors fa-2x" aria-hidden="true" />
               </div>
               <p>
-                Fabric research or materials necessary to the realization of the
-                sketches as required by the designers or specialized atelier.
-                From natural fibers to the latest generation of technical
-                fabrics.
+                <FormattedMessage
+                  id="card_section_text-2"
+                  defaultMessage="text"
+                />
               </p>
             </Card>
             <Card>
@@ -56,9 +61,10 @@ const Home = () => {
                 <i class="fa fa-paint-brush fa-2x" aria-hidden="true" />
               </div>
               <p>
-                Custom printing and dyeing of fabric chosen or already
-                available. From screen printing to digital, from 2D to 3D,
-                finishing, coatings and laser cutting.
+                <FormattedMessage
+                  id="card_section_text-3"
+                  defaultMessage="text"
+                />
               </p>
             </Card>
           </CardSection>
@@ -68,28 +74,31 @@ const Home = () => {
         <Container>
           <div className="prefooter-text">
             <h1>Fabric Consulting Services</h1>
-            <h3>di Emanuela Naccarati</h3>
+            <h3>
+              di{" "}
+              <a
+                href="https://www.imdb.com/name/nm1681916/?ref_=fn_al_nm_1"
+                target="_blank"
+              >
+                Emanuela Naccarati
+              </a>
+            </h3>
             <hr />
             <p>
-              The FCS, in collaboration with industry experts, will follow and
-              advise the customer in all phases of work, customizing the product
-              according to the stylistic demands of the designer. Streamlining
-              and speeding the frantic movie times and optimizing all the stages
-              of intermediation between supplier and customer but, above all,
-              our speciality is finding the unfindable.
+              <FormattedMessage id="prefooter_text-1" defaultMessage="text" />
             </p>
             <p>
-              Each project is individually priced, depending on the specific
-              nature of work.
+              <FormattedMessage id="prefooter_text-2" defaultMessage="text" />
             </p>
             <p>
-              Please contact us for general enquiries, prices and any other
-              request you may have:
+              <FormattedMessage id="prefooter_text-3" defaultMessage="text" />
             </p>
             <Link to="contacts">
               <img src={Mailicon} alt="mail icon" />
             </Link>
-            <p>For Private Gallery's password request click here</p>
+            <p>
+              <FormattedMessage id="prefooter_text-4" defaultMessage="text" />
+            </p>
           </div>
         </Container>
       </PreFooter>

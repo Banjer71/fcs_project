@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FormattedMessage } from "react-intl";
 import { Link } from "react-router-dom";
 import logo from "../images/logo-fcs.jpg";
 import {
@@ -49,18 +50,13 @@ const NavBar = () => {
           <li>
             <div className="content">
               <a className="gallery">
-                Gallery
+                <FormattedMessage id='gallery' />
                 <i class="fa fa-caret-down" />
               </a>
               <ul className="dropdown">
                 <li>
                   <Link to="/fabrics" onClick={handleClickItem}>
-                    Fabrics
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/privategallery" onClick={handleClickItem}>
-                    Private Gallery
+                  <FormattedMessage id='fabrics' />
                   </Link>
                 </li>
               </ul>
@@ -68,17 +64,17 @@ const NavBar = () => {
           </li>
           <li>
             <Link to="/elaborations" onClick={handleClickItem}>
-              Elaborations
+            <FormattedMessage id='elaborations' />
             </Link>
           </li>
           <li>
             <Link to="/collaborations" onClick={handleClickItem}>
-              Collaborations
+            <FormattedMessage id='collaborations' />
             </Link>
           </li>
           <li>
             <Link to="contacts" onClick={handleClickItem}>
-              Contacts
+            <FormattedMessage id='contacts' />
             </Link>
           </li>
         </Navigation>

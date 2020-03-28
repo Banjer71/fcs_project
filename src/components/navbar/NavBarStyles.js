@@ -107,6 +107,10 @@ export const Navigation = styled.ul`
       z-index: 10;
     }
 
+    .dropdown li {
+      padding-left: 0;
+    }
+
     .content:hover .dropdown {
       display: block;
     }

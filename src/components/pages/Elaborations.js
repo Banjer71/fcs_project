@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage } from "react-intl";
 import styled from "styled-components";
 import { Container } from "./PagesStyles";
 import Slideshow from "../SlideShow";
@@ -22,7 +23,9 @@ const Elaborations = () => {
   return (
     <Content>
       <ContainerTwo>
-        <h3>Embroidery Effect</h3>
+        <h3>
+          <FormattedMessage id="slide_elaborations" />
+        </h3>
         <Slideshow image={embroidery} className="emb" />
       </ContainerTwo>
     </Content>

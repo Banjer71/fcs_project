@@ -1,10 +1,12 @@
 import React from "react";
+import { FormattedMessage } from "react-intl";
 import styled from "styled-components";
 import { Container } from "./PagesStyles";
 import Catch22 from "../images/catch22.jpg";
 import AllTM from "../images/allthemoney.jpg";
 import Zoolander2 from "../images/zoolander_2.jpg";
 import Confratello from "../images/casadel_confratello.jpg";
+import Suspiria from "../images/suspiria.jpg";
 import Card from "./Card";
 
 const Content = styled.div`
@@ -36,7 +38,7 @@ const Collaborations = () => {
   return (
     <Content>
       <SubContainer>
-        <h2>Collaborations</h2>
+        <h2><FormattedMessage id='title-collaborations' /></h2>
       </SubContainer>
       <Container>
         <Collaboration>
@@ -83,6 +85,16 @@ const Collaborations = () => {
             fromCollab={true}
             textTitle="Casa del Confratello"
             text="Casa del confratello: Art Director Emanuela Naccarati Fornitori"
+            text2={`Ricerca fornitori, tessuti e materiali degli abiti e degli accessori dell'azienda`}
+          />
+          <Card
+            image={Suspiria}
+            name="Emanuela Naccarati"
+            company="Fabric Consultant Costume P.A."
+            fromCollab={true}
+            textTitle="Suspiria"
+            objective="FCS Obiettivo:"
+            text="Ricerca Fornitori"
             text2={`Ricerca fornitori, tessuti e materiali degli abiti e degli accessori dell'azienda`}
           />
         </Collaboration>

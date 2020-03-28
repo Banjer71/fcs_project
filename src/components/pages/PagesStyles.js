@@ -80,6 +80,10 @@ export const PreFooter = styled.div`
     padding: 1rem;
   }
 
+  h3 a {
+    color: #313539;
+  }
+
   hr {
     max-width: 400px;
     background-color: #eaeaeb;

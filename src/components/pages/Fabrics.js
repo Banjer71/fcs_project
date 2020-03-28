@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage } from "react-intl";
 import styled from "styled-components";
 import { Content, Container, SlideCard } from "./PagesStyles";
 import Slideshow from "../SlideShow";
@@ -62,27 +63,29 @@ const Fabrics = () => {
     <Content>
       <Container>
         <SlideCard>
-          <h3>Cotton/Linen</h3>
+          <h3>
+            <FormattedMessage id="tessuti_slide-1"/>
+          </h3>
           <Slideshow image={cottonLinen} />
         </SlideCard>
         <SlideCard>
-          <h3>Organdis</h3>
+          <h3><FormattedMessage id="tessuti_slide-2"/></h3>
           <Slideshow image={organdis} />
         </SlideCard>
         <SlideCard>
-          <h3>Techno Fabrics</h3>
+          <h3><FormattedMessage id="tessuti_slide-3"/></h3>
           <Slideshow image={technoFabrics} />
         </SlideCard>
         <SlideCard>
-          <h3>Match</h3>
+          <h3><FormattedMessage id="tessuti_slide-4"/></h3>
           <Slideshow image={match} />
         </SlideCard>
         <SlideCard>
-          <h3>Jersey</h3>
+          <h3><FormattedMessage id="tessuti_slide-5"/></h3>
           <Slideshow image={jersey} />
         </SlideCard>
         <SlideCard>
-          <h3>Leather</h3>
+          <h3><FormattedMessage id="tessuti_slide-6"/></h3>
           <Slideshow image={leather} />
         </SlideCard>
       </Container>

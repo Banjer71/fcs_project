@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { FormattedMessage } from "react-intl";
 import emailjs from "emailjs-com";
 import styled from "styled-components";
 import { Content, Container } from "./PagesStyles";
+import defaultMessage from "../../translation/message";
 
 const FormContent = styled.div`
   .email-response {
@@ -77,7 +79,12 @@ const ContactUs = () => {
       .then(
         result => {
           console.log(result.text);
-          setIsSent("Thank you, your message has been sent successfully");
+          setIsSent(
+            <FormattedMessage
+              id="formMessage"
+              defaultMessage={defaultMessage.def.formMessage}
+            />
+          );
           setTimeout(removeResponse, 4000);
         },
         error => {

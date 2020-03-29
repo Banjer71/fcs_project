@@ -15,7 +15,7 @@ export const MainArticle = styled.article`
   border-top: 1px solid rgb(234, 234, 235);
   > h1,
   p {
-    padding: 1.2rem 0;
+    padding: 1.2rem;
   }
 
   > p {

@@ -50,9 +50,9 @@ const Collaborations = () => {
             textTitle="Catch-22"
             textDesign="Costume Design"
             textName="Janity Jates"
-            objective="FCS Obiettivo:"
-            text="Ricerca Fornitori"
-            text2="Ricerca, Campionatura e lavorazione per: tessuti, maglieria, jeans, pelle e accessori"
+            objective={<FormattedMessage id='collaboration-obj' defaultMessage='text' />}
+            text={<FormattedMessage id='search-suppliers' defaultMessage='text' />}
+            text2={<FormattedMessage id='text-card-catch22' defaultMessage='text' />}
           />
           <Card
             image={AllTM}
@@ -62,9 +62,9 @@ const Collaborations = () => {
             textTitle="All The Money"
             textDesign="Costume Design"
             textName="Janity Jates"
-            objective="FCS Obiettivo:"
-            text="Ricerca Fornitori"
-            text2="Ricerca, Campionatura e lavorazione per: tessuti, maglieria, jeans, pelle e accessori"
+            objective={<FormattedMessage id='collaboration-obj' defaultMessage='text' />}
+            text={<FormattedMessage id='search-suppliers' defaultMessage='text' />}
+            text2={<FormattedMessage id='text-card-alltm' defaultMessage='text' />}
           />
           <Card
             image={Zoolander2}
@@ -74,9 +74,9 @@ const Collaborations = () => {
             textTitle="Zoolander"
             textDesign=""
             textName="Leesa Evans"
-            objective="FCS Obiettivo:"
-            text="Ricerca Fornitori"
-            text2="Ricerca, Campionatura e lavorazione per: tessuti, maglieria, jeans, pelle e accessori"
+            objective={<FormattedMessage id='collaboration-obj' defaultMessage='text' />}
+            text={<FormattedMessage id='search-suppliers' defaultMessage='text' />}
+            text2={<FormattedMessage id='text-card-zool' defaultMessage='text' />}
           />
           <Card
             image={Confratello}
@@ -85,7 +85,7 @@ const Collaborations = () => {
             fromCollab={true}
             textTitle="Casa del Confratello"
             text="Casa del confratello: Art Director Emanuela Naccarati Fornitori"
-            text2={`Ricerca fornitori, tessuti e materiali degli abiti e degli accessori dell'azienda`}
+            text2={<FormattedMessage id='text-card-confra' defaultMessage='text' />}
           />
           <Card
             image={Suspiria}
@@ -93,9 +93,9 @@ const Collaborations = () => {
             company="Fabric Consultant Costume P.A."
             fromCollab={true}
             textTitle="Suspiria"
-            objective="FCS Obiettivo:"
-            text="Ricerca Fornitori"
-            text2={`Ricerca fornitori, tessuti e materiali degli abiti e degli accessori dell'azienda`}
+            objective={<FormattedMessage id='collaboration-obj' defaultMessage='text' />}
+            text={<FormattedMessage id='search-suppliers' defaultMessage='text' />}
+            text2={<FormattedMessage id='text-card-suspiria' defaultMessage='text' />}
           />
         </Collaboration>
       </Container>

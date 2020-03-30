@@ -19,7 +19,7 @@ function App() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>FCS Emanuela Naccarati</title>
-        <meta name="description" content="Fabric Consulting Services" />
+        <meta name="description" content="Fabric Consulting Services" data-react-helmet='true'/>
         <link rel="canonical" href="http://fabricservices.it" />
       </Helmet>
       <Router>

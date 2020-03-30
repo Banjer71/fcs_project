@@ -5,7 +5,7 @@ export default defineMessages({
         "gallery": "Gallery",
         "fabrics": "Fabrics",
         "elaborations": "Elaborations",
-        "collaboration": "Collaborations",
+        "collaborations": "Collaborations",
         "contacts": "Contacts",
         "title-collaborations": "Collaborations",
         "home_h1_text": "<html>{FCS}</html> Offers a specialized service in: Fabric research, dyeing and textile printing for Film, Television, Theatre and Fashion Industry.",

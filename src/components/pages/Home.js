@@ -13,13 +13,14 @@ import One from "../images/02/fcs6-700x300.jpg";
 import Two from "../images/02/fcs5-700x300.jpg";
 import Three from "../images/02/bbb-700x300.jpg";
 import Slideshow from "../SlideShow";
-import defaultMessage from '../../translation/message';
+import defaultMessage from "../../translation/message";
 
 const slideImages = [One, Two, Three];
 
 const Home = () => {
   return (
     <React.Fragment>
+      
       <Slideshow image={slideImages} className="emb-home" />
       <Container>
         <MainArticle>
@@ -42,7 +43,7 @@ const Home = () => {
               <p>
                 <FormattedMessage
                   id="card_section_text-1"
-                  defaultMessage={defaultMessage.def.card_section_text-1}
+                  defaultMessage={defaultMessage.def.card_section_text - 1}
                 />
               </p>
             </Card>
@@ -53,7 +54,7 @@ const Home = () => {
               <p>
                 <FormattedMessage
                   id="card_section_text-2"
-                  defaultMessage={defaultMessage.def.card_section_text-2}
+                  defaultMessage={defaultMessage.def.card_section_text - 2}
                 />
               </p>
             </Card>
@@ -64,7 +65,7 @@ const Home = () => {
               <p>
                 <FormattedMessage
                   id="card_section_text-3"
-                  defaultMessage={defaultMessage.def.card_section_text-3}
+                  defaultMessage={defaultMessage.def.card_section_text - 3}
                 />
               </p>
             </Card>
@@ -86,19 +87,31 @@ const Home = () => {
             </h3>
             <hr />
             <p>
-              <FormattedMessage id="prefooter_text-1" defaultMessage={defaultMessage.def.prefooter_text-1} />
+              <FormattedMessage
+                id="prefooter_text-1"
+                defaultMessage={defaultMessage.def.prefooter_text - 1}
+              />
             </p>
             <p>
-              <FormattedMessage id="prefooter_text-2" defaultMessage={defaultMessage.def.prefooter_text-2} />
+              <FormattedMessage
+                id="prefooter_text-2"
+                defaultMessage={defaultMessage.def.prefooter_text - 2}
+              />
             </p>
             <p>
-              <FormattedMessage id="prefooter_text-3" defaultMessage={defaultMessage.def.prefooter_text-3} />
+              <FormattedMessage
+                id="prefooter_text-3"
+                defaultMessage={defaultMessage.def.prefooter_text - 3}
+              />
             </p>
             <Link to="contacts">
               <img src={Mailicon} alt="mail icon" />
             </Link>
             <p>
-              <FormattedMessage id="prefooter_text-4" defaultMessage={defaultMessage.def.prefooter_text-4} />
+              <FormattedMessage
+                id="prefooter_text-4"
+                defaultMessage={defaultMessage.def.prefooter_text - 4}
+              />
             </p>
           </div>
         </Container>

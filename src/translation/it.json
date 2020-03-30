@@ -2,7 +2,7 @@
     "gallery": "Galleria",
     "fabrics": "Tessuti",
     "elaborations": "Elaborazioni",
-    "collaboration": "Collaborazioni",
+    "collaborations": "Collaborazioni",
     "contacts": "Contatti",
     "formMessage": "Grazie, il messaggio e' stato inviato con successo!",
     "title-collaborations": "Collaborazioni",
@@ -23,9 +23,9 @@
     "slide_elaborations": "Dipinto a Mano_Effetto Ricamo",
     "collaboration-obj": "FCS Obiettivo",
     "search-suppliers": "Ricerca Fornitori",
-    "text-card-catch22": "Ricerca, Campionatura e lavorazione per: tessuti, maglieria, jeans, pelle e accessori",
-    "text-card-alltm": "Ricerca, Campionatura e lavorazione per: tessuti, maglieria, jeans, pelle e accessori",
-    "text-card-zool": "Ricerca, Campionatura e lavorazione per: tessuti, maglieria, jeans, pelle e accessori",
+    "text-card-catch22": "Ricerca, Campionatura e lavorazioni per: tessuti, maglieria, jeans, pelle e accessori",
+    "text-card-alltm": "Ricerca, Campionatura e lavorazioni per: tessuti, maglieria, jeans, pelle e accessori",
+    "text-card-zool": "Ricerca, Campionatura e lavorazioni per: tessuti, maglieria, jeans, pelle e accessori",
     "text-card-confra": "`Ricerca fornitori, tessuti e materiali degli abiti e degli accessori dell'azienda`",
     "text-card-suspiria": "`Ricerca fornitori, tessuti e materiali degli abiti e degli accessori dell'azienda`"
 }

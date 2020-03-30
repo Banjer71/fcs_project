@@ -11,6 +11,7 @@ import Contacts from "./components/pages/Contacts";
 import PrivateGallery from "./components/pages/PrivateGallery";
 import Fabrics from "./components/pages/Fabrics";
 import Footer from "./components/pages/Footer";
+import ScrollTop from "./ScrollTop";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <link rel="canonical" href="http://fabricservices.it" />
       </Helmet>
       <Router>
+        <ScrollTop />
         <div className="phantom">
           <div className="container-top-bar">
             <TopBar />

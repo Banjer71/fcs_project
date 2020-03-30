@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const BtnContent = styled.div`
-  border: 1px solid green;
+  padding: 10px;
   display: inline-block;
 
   > .bar {

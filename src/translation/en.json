@@ -4,6 +4,7 @@
     "elaborations": "Elaborations",
     "collaboration": "Collaborations",
     "contacts": "Contacts",
+    "formMessage": "Thank you, your message has been sent successfully!",
     "title-collaborations": "Collaborations",
     "home_h1_text": "<html>{FCS}</html> Offers a specialized service in: Fabric research, dyeing and textile printing for Film, Television, Theatre and Fashion Industry.",
     "card_section_text-1": "Offering a wide range of the latest swatches chosen from many Italian and European companies.",
@@ -27,6 +28,4 @@
     "text-card-zool": "Research, Sampling and processing for: fabrics, knitwear, jeans, leather and accessories",
     "text-card-confra": "Search suppliers, fabrics and materials of the company's clothes and accessories",
     "text-card-suspiria": "Search suppliers, fabrics and materials of the company's clothes and accessories"
-    
-
 }

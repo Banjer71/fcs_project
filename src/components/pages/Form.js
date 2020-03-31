@@ -113,7 +113,6 @@ const ContactUs = () => {
           <Info>
             <div className="address">
               <p>Fabric Consulting Services</p>
-              <p>Tel: +39 338 2718022</p>
               <p>info@fabricservices.it</p>
             </div>
             <div className="address">

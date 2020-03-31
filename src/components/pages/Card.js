@@ -86,7 +86,7 @@ const ColCard = styled.div`
   @media screen and (min-width: 1024px) {
     grid-column: ${props => (props.fromCollab ? "span 1" : "1")};
     width: 300px;
-    height: 420px;
+    /* height: 420px; */
   }
 `;
 

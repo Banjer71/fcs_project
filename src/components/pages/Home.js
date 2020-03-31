@@ -106,12 +106,6 @@ const Home = () => {
             <Link to="contacts">
               <img src={Mailicon} alt="mail icon" />
             </Link>
-            <p>
-              <FormattedMessage
-                id="prefooter_text-4"
-                defaultMessage={defaultMessage.def.prefooter_text - 4}
-              />
-            </p>
           </div>
         </Container>
       </PreFooter>

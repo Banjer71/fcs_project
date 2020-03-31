@@ -51,10 +51,10 @@ const Collaborations = () => {
           <Card
             image={Catch22}
             name="Emanuela Naccarati"
-            company="Fabric Consultant Costume P.A."
+            company="Fabric Consultant"
             fromCollab={true}
             textTitle="Catch-22"
-            textDesign="Costume Design"
+            textDesign="Costume Designer"
             textName="Jenny Eagan"
             objective={
               <FormattedMessage
@@ -78,10 +78,10 @@ const Collaborations = () => {
           <Card
             image={AllTM}
             name="Emanuela Naccarati"
-            company="Fabric Consultant Costume P.A."
+            company="Fabric Consultant"
             fromCollab={true}
             textTitle="All The Money"
-            textDesign="Costume Design"
+            textDesign="Costume Designer"
             textName="Janty Jates"
             objective={
               <FormattedMessage
@@ -105,10 +105,10 @@ const Collaborations = () => {
           <Card
             image={Zoolander2}
             name="Emanuela Naccarati"
-            company="Fabric Consultant Costume P.A."
+            company="Fabric Consultant"
             fromCollab={true}
             textTitle="Zoolander"
-            textDesign="Costume Design"
+            textDesign="Costume Designer"
             textName="Leesa Evans"
             objective={
               <FormattedMessage
@@ -132,10 +132,10 @@ const Collaborations = () => {
           <Card
             image={Suspiria}
             name="Emanuela Naccarati"
-            company="Fabric Consultant Costume P.A."
+            company="Fabric Consultant"
             fromCollab={true}
             textTitle="Suspiria"
-            textDesign="Costume Design"
+            textDesign="Costume Designer"
             textName="Giulia Piersanti"
             objective={
               <FormattedMessage
@@ -159,7 +159,7 @@ const Collaborations = () => {
           <Card
             image={Confratello}
             name="Emanuela Naccarati"
-            company="Fabric Consultant Costume P.A."
+            company="Art Director - Fabric Consultant"
             fromCollab={true}
             textTitle="Casa del Confratello"
             text="Casa del confratello: Art Director Emanuela Naccarati"

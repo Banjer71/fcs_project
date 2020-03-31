@@ -55,7 +55,7 @@ const Collaborations = () => {
             fromCollab={true}
             textTitle="Catch-22"
             textDesign="Costume Design"
-            textName="Enny Eagan"
+            textName="Jenny Eagan"
             objective={
               <FormattedMessage
                 id="collaboration-obj"
@@ -108,7 +108,7 @@ const Collaborations = () => {
             company="Fabric Consultant Costume P.A."
             fromCollab={true}
             textTitle="Zoolander"
-            textDesign=""
+            textDesign="Costume Design"
             textName="Leesa Evans"
             objective={
               <FormattedMessage
@@ -135,6 +135,7 @@ const Collaborations = () => {
             company="Fabric Consultant Costume P.A."
             fromCollab={true}
             textTitle="Suspiria"
+            textDesign="Costume Design"
             textName="Giulia Piersanti"
             objective={
               <FormattedMessage

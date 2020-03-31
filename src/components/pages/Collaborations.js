@@ -55,7 +55,7 @@ const Collaborations = () => {
             fromCollab={true}
             textTitle="Catch-22"
             textDesign="Costume Design"
-            textName="Janity Jates"
+            textName="Enny Eagan"
             objective={
               <FormattedMessage
                 id="collaboration-obj"
@@ -82,7 +82,7 @@ const Collaborations = () => {
             fromCollab={true}
             textTitle="All The Money"
             textDesign="Costume Design"
-            textName="Janity Jates"
+            textName="Janty Jates"
             objective={
               <FormattedMessage
                 id="collaboration-obj"
@@ -135,6 +135,7 @@ const Collaborations = () => {
             company="Fabric Consultant Costume P.A."
             fromCollab={true}
             textTitle="Suspiria"
+            textName="Giulia Piersanti"
             objective={
               <FormattedMessage
                 id="collaboration-obj"
@@ -160,7 +161,7 @@ const Collaborations = () => {
             company="Fabric Consultant Costume P.A."
             fromCollab={true}
             textTitle="Casa del Confratello"
-            text="Casa del confratello: Art Director Emanuela Naccarati Fornitori"
+            text="Casa del confratello: Art Director Emanuela Naccarati"
             text2={
               <FormattedMessage
                 id="text-card-confra"

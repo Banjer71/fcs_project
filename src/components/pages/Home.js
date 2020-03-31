@@ -20,7 +20,6 @@ const slideImages = [One, Two, Three];
 const Home = () => {
   return (
     <React.Fragment>
-      
       <Slideshow image={slideImages} className="emb-home" />
       <Container>
         <MainArticle>

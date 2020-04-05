@@ -12,14 +12,14 @@ const properties = {
   pauseOnHover: true,
   onChange: (oldIndex, newIndex) => {
     console.log(`slide transition from ${oldIndex} to ${newIndex}`);
-  }
+  },
 };
 
 const Slideshow = ({ image, className }) => {
   return (
     <div className={`slide-container ${className}`}>
       <Slide {...properties}>
-        {image.map(item => (
+        {image.map((item) => (
           <div className={`each-slide ${className}`}>
             <div style={{ backgroundImage: `url(${item})` }} />
           </div>

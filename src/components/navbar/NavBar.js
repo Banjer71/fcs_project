@@ -8,7 +8,7 @@ import {
   Logo,
   LogoAndBtn,
   BtnContent,
-  Navigation
+  Navigation,
 } from "./NavBarStyles";
 
 const NavBar = () => {
@@ -37,7 +37,7 @@ const NavBar = () => {
         <LogoAndBtn>
           <Link to="/" onClick={handleClickItem}>
             <Logo>
-              <img src={logo} />
+              <img src={logo} alt="logo" />
             </Logo>
           </Link>
           <BtnContent onClick={toggleClickHandler}>
@@ -50,13 +50,13 @@ const NavBar = () => {
           <li>
             <div className="content">
               <a className="gallery">
-                <FormattedMessage id='gallery' />
+                <FormattedMessage id="gallery" />
                 <i class="fa fa-caret-down" />
               </a>
               <ul className="dropdown">
                 <li>
                   <Link to="/fabrics" onClick={handleClickItem}>
-                  <FormattedMessage id='fabrics' />
+                    <FormattedMessage id="fabrics" />
                   </Link>
                 </li>
               </ul>
@@ -64,17 +64,17 @@ const NavBar = () => {
           </li>
           <li>
             <Link to="/elaborations" onClick={handleClickItem}>
-            <FormattedMessage id='elaborations' />
+              <FormattedMessage id="elaborations" />
             </Link>
           </li>
           <li>
             <Link to="/collaborations" onClick={handleClickItem}>
-            <FormattedMessage id='collaborations' />
+              <FormattedMessage id="collaborations" />
             </Link>
           </li>
           <li>
             <Link to="contacts" onClick={handleClickItem}>
-            <FormattedMessage id='contacts' />
+              <FormattedMessage id="contacts" />
             </Link>
           </li>
         </Navigation>

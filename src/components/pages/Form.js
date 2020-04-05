@@ -67,7 +67,7 @@ const ContactUs = () => {
     setIsSent("");
   };
 
-  const sendEmail = e => {
+  const sendEmail = (e) => {
     e.preventDefault();
     emailjs
       .sendForm(
@@ -77,7 +77,7 @@ const ContactUs = () => {
         "user_iESDZWRha1lEH2BnEdu5t"
       )
       .then(
-        result => {
+        (result) => {
           console.log(result.text);
           setIsSent(
             <FormattedMessage
@@ -87,7 +87,7 @@ const ContactUs = () => {
           );
           setTimeout(removeResponse, 4000);
         },
-        error => {
+        (error) => {
           console.log(error.text);
           setIsSent("Something went wrong");
         }

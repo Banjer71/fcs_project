@@ -50,8 +50,8 @@ export const NavArea = styled.div`
 `;
 
 export const Navigation = styled.ul`
-  opacity: ${props => (props.isOpen ? "1" : "0")};
-  display: ${props => (props.isOpen ? "block" : "none")};
+  opacity: ${(props) => (props.isOpen ? "1" : "0")};
+  display: ${(props) => (props.isOpen ? "block" : "none")};
   transition: all 0.5s ease;
 
   > li {
@@ -65,6 +65,7 @@ export const Navigation = styled.ul`
     padding: 10px;
     cursor: pointer;
     margin-bottom: 2px;
+    color: #313539;
   }
 
   > li a:hover {

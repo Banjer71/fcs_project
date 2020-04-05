@@ -5,7 +5,7 @@ const ColCard = styled.div`
   width: 300px;
   height: 430px;
   margin: 0 auto 120px auto;
-  grid-column: ${props => (props.fromCollab ? "1/9" : "1")};
+  grid-column: ${(props) => (props.fromCollab ? "1/9" : "1")};
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -57,8 +57,11 @@ const ColCard = styled.div`
   }
 
   .col-card-info {
-    padding-top: 25px;
     padding-left: 10px;
+    margin-top: 5rem;
+    position: absolute;
+    bottom: -80px;
+
     > h3,
     p {
       margin-bottom: 10px;
@@ -76,7 +79,7 @@ const ColCard = styled.div`
   }
 
   @media screen and (min-width: 680px) {
-    grid-column: ${props => (props.fromCollab ? "span 4" : "1")};
+    grid-column: ${(props) => (props.fromCollab ? "span 4" : "1")};
     .col-card-img img {
       width: 300px;
       height: 430px;
@@ -84,22 +87,17 @@ const ColCard = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    grid-column: ${props => (props.fromCollab ? "span 1" : "1")};
+    grid-column: ${(props) => (props.fromCollab ? "span 1" : "1")};
     width: 300px;
-    /* height: 420px; */
   }
 `;
 
-const Card = props => {
+const Card = (props) => {
   return (
     <ColCard fromCollab={props.fromCollab}>
       <div className="flip-card">
         <div className="flip-card-front col-card-img">
           <img src={props.image} alt="poster movie" />
-          <div className="col-card-info">
-            <h3>{props.name}</h3>
-            <p>{props.company}</p>
-          </div>
         </div>
         <div className="flip-card-back ">
           <h3 className="card-text">{props.textTitle}</h3>
@@ -109,6 +107,10 @@ const Card = props => {
           <p>{props.text}</p>
           <p>{props.text2}</p>
         </div>
+      </div>
+      <div className="col-card-info">
+        <h3>{props.name}</h3>
+        <p>{props.company}</p>
       </div>
     </ColCard>
   );

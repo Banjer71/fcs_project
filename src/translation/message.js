@@ -9,6 +9,8 @@ export default defineMessages({
     contacts: "Contacts",
     formMessage: "Thank you, your message has been sent successfully!",
     "title-collaborations": "Collaborations",
+    "title-elaborations": "Elaborations",
+    "title-fabrics": "Fabrics",
     home_h1_text:
       "<html>{FCS}</html> Offers a specialized service in: Fabric research, dyeing and textile printing for Film, Television, Theatre and Fashion Industry.",
     "card_section_text-1":

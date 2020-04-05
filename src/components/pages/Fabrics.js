@@ -1,8 +1,9 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
 import defaultMessage from "../../translation/message";
-import { Content, Container, SlideCard } from "./PagesStyles";
+import { Content, SubContainer, Container, SlideCard } from "./PagesStyles";
 import Slideshow from "../SlideShow";
+
 
 const cottonLinen = [
   "/assets/lino/lino.jpg",
@@ -61,6 +62,14 @@ const leather = [
 const Fabrics = () => {
   return (
     <Content>
+    <SubContainer>
+        <h2>
+          <FormattedMessage
+            id="title-fabrics"
+            defaultMessage={defaultMessage.def["title-fabrics"]}
+          />
+        </h2>
+      </SubContainer>
       <Container>
         <SlideCard>
           <h3>

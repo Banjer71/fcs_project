@@ -117,7 +117,7 @@ const ContactUs = () => {
             </div>
             <div className="address">
               <p>Via Montecavallo, 15</p>
-              <p>02039 Toffi - Rieti, Italy</p>
+              <p>02039 Toffia - Rieti, Italy</p>
               <p>P.I. 028999850735</p>
             </div>
           </Info>

@@ -4,12 +4,7 @@ import styled from "styled-components";
 import { Container, Content, SubContainer } from "./PagesStyles";
 import Slideshow from "../SlideShow";
 import defaultMessage from "../../translation/message";
-
-const embroidery = [
-  "/assets/embroidery/bordeaux.jpg",
-  "/assets/embroidery/reding.jpg",
-  "/assets/embroidery/tasca.jpg",
-];
+import { embroidery } from "./imagesArrays";
 
 const ContainerTwo = styled(Container)`
   @media screen and (min-width: 960px) {
@@ -20,7 +15,7 @@ const ContainerTwo = styled(Container)`
 const Elaborations = () => {
   return (
     <Content>
-    <SubContainer>
+      <SubContainer>
         <h2>
           <FormattedMessage
             id="title-elaborations"

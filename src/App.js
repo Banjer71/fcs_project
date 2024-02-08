@@ -1,6 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {HashRouter, Switch, Route } from "react-router-dom";
 import TopBar from "./components/topbar/Topbar";
 import "./App.css";
 import NavBar from "./components/navbar/NavBar";
@@ -26,7 +26,7 @@ function App() {
         />
         <link rel="canonical" href="http://fabricservices.it" />
       </Helmet>
-      <Router>
+      <HashRouter>
         <ScrollTop />
         <div className="phantom">
           <div className="container-top-bar">
@@ -43,7 +43,7 @@ function App() {
           </Switch>
         </div>
         <Footer />
-      </Router>
+      </HashRouter>
     </div>
   );
 }

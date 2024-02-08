@@ -2,7 +2,7 @@
   "name": "fcs_project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://fabricservices.it",
+  "homepage": "https://banjer71.github.io/fcs_project/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",

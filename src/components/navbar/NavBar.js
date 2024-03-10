@@ -51,7 +51,7 @@ const NavBar = () => {
             <div className="content">
               <a className="gallery">
                 <FormattedMessage id="gallery" />
-                <i class="fa fa-caret-down" />
+                <i className="fa fa-caret-down" />
               </a>
               <ul className="dropdown">
                 <li>

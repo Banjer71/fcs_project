@@ -19,8 +19,8 @@ const Slideshow = ({ image, className }) => {
   return (
     <div className={`slide-container ${className}`}>
       <Slide {...properties}>
-        {image.map((item) => (
-          <div className={`each-slide ${className}`}>
+        {image.map((item, index) => (
+          <div className={`each-slide ${className}`} key={index}>
             <div style={{ backgroundImage: `url(${item})` }} />
           </div>
         ))}

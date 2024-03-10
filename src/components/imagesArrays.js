@@ -18,14 +18,14 @@ export const organdis = [
 ];
 
 export const technoFabrics = [
-  "/assets/technofabrics/orange.jpg",
-  "/assets/technofabrics/whitesheet.jpg",
-  "/assets/technofabrics/techno3.png",
-  "/assets/technofabrics/fuxia.png",
-  "/assets/technofabrics/techno4.png",
-  "/assets/technofabrics/reterossa.jpg",
-  "/assets/technofabrics/techno5.png",
-  "/assets/technofabrics/techno6.jpg",
+  "./assets/technofabrics/orange.jpg",
+  "../assets/technofabrics/whitesheet.jpg",
+  "../assets/technofabrics/techno3.png",
+  "../assets/technofabrics/fuxia.png",
+  "../assets/technofabrics/techno4.png",
+  "../assets/technofabrics/reterossa.jpg",
+  "../assets/technofabrics/techno5.png",
+  "../assets/technofabrics/techno6.jpg",
 ];
 
 export const match = [
@@ -53,7 +53,7 @@ export const leather = [
 ];
 
 export const embroidery = [
-    "/assets/embroidery/bordeaux.jpg",
-    "/assets/embroidery/reding.jpg",
-    "/assets/embroidery/tasca.jpg",
+    "../assets/embroidery/bordeaux.jpg",
+    "../assets/embroidery/reding.jpg",
+    "../assets/embroidery/tasca.jpg",
   ];

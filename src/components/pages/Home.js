@@ -80,6 +80,7 @@ const Home = () => {
               <a
                 href="https://www.imdb.com/name/nm1681916/?ref_=fn_al_nm_1"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Emanuela Naccarati
               </a>
